@@ -157,7 +157,7 @@ li:hover {
     width: 100%;
     min-height: 100px;
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     color: white;
 }
 
@@ -181,6 +181,15 @@ li:hover {
     margin-bottom: 150px;
 }
 
+.promotion{
+    position: relative;
+    height: 100px;
+    width: 600px;
+    background-color: black;
+    bottom: 100px;
+    margin: 0 40px;
+}
+
 .hot-daily {
     width: 30%;
     max-width: 300px;
@@ -198,13 +207,26 @@ li:hover {
 }
 
 .img-hot {
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 130px;
     margin: 10px;
     max-width: 100%;
     max-height: 100%;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.textImgHot {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.713);
+    width: 100%;
+    min-height: 40%;
+    text-align: center;
+    font-size: 12px;
+    color: white;
 }
 
 section {
@@ -222,6 +244,32 @@ h2 {
 
 .x {
     padding-bottom: 20px;
+}
+
+.container-two-parts {
+    display: flex;
+}
+
+.color-teste {
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+.color-teste2 {
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+.part1 {
+    width: 65%;
+}
+
+.part2 {
+    width: 35%;
 }
 
 @media (max-width: 900px) {
