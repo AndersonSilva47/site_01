@@ -182,12 +182,11 @@ li:hover {
 }
 
 .promotion{
-    position: relative;
+    display: block;
     height: 100px;
-    width: 600px;
     background-color: black;
-    bottom: 100px;
-    margin: 0 40px;
+    margin: 0 auto;
+    width: 800px;
 }
 
 .hot-daily {
@@ -208,7 +207,7 @@ li:hover {
 
 .img-hot {
     width: 250px;
-    height: 130px;
+    height: 100px;
     margin: 10px;
     max-width: 100%;
     max-height: 100%;
