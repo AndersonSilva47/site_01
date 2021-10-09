@@ -12,14 +12,14 @@ let currentSlide = 0;
 
 function prev() {
     currentSlide--;
-    if(currentSlide < 0) currentSlide = qtdSlide -1;
+    if (currentSlide < 0) currentSlide = qtdSlide - 1;
     updateMargin();
 
 }
 
 function goNext() {
     currentSlide++;
-    if(currentSlide > (qtdSlide -1)) currentSlide = 0;
+    if (currentSlide > (qtdSlide - 1)) currentSlide = 0;
     updateMargin();
 }
 
