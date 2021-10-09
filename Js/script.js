@@ -7,6 +7,7 @@ document.querySelector('.control-slide').style.width = `${widthSlide}px`; //CONF
 document.querySelector('.control-slide').style.height = `${heightSlide}px`;
 
 document.querySelector('.slot-slide').style.width = `${widthSlide * qtdSlide}px`;
+document.querySelector('.promotion').style.width = `${widthSlide}px`;
 
 let currentSlide = 0;
 
