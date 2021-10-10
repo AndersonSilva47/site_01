@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Montserrat:ital,wght@0,100;0,300;0,800;1,100&family=Open+Sans:ital,wght@0,300;0,500;0,800;1,300;1,800&display=swap');
 /*Akronim*/
 
+/*MAIN*/
+
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +37,30 @@ img {
     background-size: cover !important;
 }
 
+li {
+    list-style-type: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: brown;
+}
+
+a {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+li:hover {
+    background-color: rgb(0, 255, 115);
+    transition: all 10ms ease-in-out 0s;
+}
+
+a:hover {
+    color: black;
+}
+
 /*HEAD*/
 
 .head {
@@ -53,7 +79,7 @@ img {
     text-align: center;
 }
 
-.b {
+.fastNew {
     font-weight: 700;
     color: black;
 }
@@ -84,31 +110,6 @@ img {
     justify-content: flex-start;
 }
 
-li {
-    list-style-type: none;
-    padding: 1rem;
-    text-transform: uppercase;
-    background-color: brown;
-}
-
-a {
-    padding: 1rem;
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-    font-size: 12px;
-}
-
-li:hover {
-    background-color: rgb(0, 255, 115);
-
-    transition: all 10ms ease-in-out 0s;
-}
-
-a:hover {
-    color: black;
-}
-
 .menu-av {
     display: flex;
     justify-content: flex-start;
@@ -120,26 +121,28 @@ a:hover {
 .janela1 {
     background-color: white;
     display: flex;
-    justify-content: space-between;
     max-width: 100%;
-    overflow: hidden;
-    padding-bottom: 10px;
     border: 1px inset gray;
     border-bottom: none;
 }
 
+/*SECTION 1 - Slider*/
+
 .slider {
     height: inherit;
     max-width: 600px;
-    max-height: 420px;
+    max-height: auto;
     overflow: hidden;
-    position: relative;
     margin: 0 auto;
+    justify-content: center;
+    border: 2px solid black;
 }
 
 .slot-slide {
     display: flex;
-    height: 80%;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
     max-height: 100%;
     transition: all ease 0.8s;
 }
@@ -150,7 +153,6 @@ a:hover {
     height: 100%;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 
 .img-slide {
@@ -189,10 +191,36 @@ a:hover {
     margin-bottom: 150px;
 }
 
+/*SECTION 1 - Mini-img*/
+
+.testeDIV {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-img {
+    margin: 1px;
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+}
+
+.mini-img {
+    background-size: cover;
+    background-position: center;
+}
+
+/*SECTION 1- Promotion Banner*/
+
 .promotion-main {
     display: flex;
     border-left: 1px inset gray;
     border-right: 1px inset gray;
+    justify-content: space-between;
 }
 
 .promotion {
@@ -205,12 +233,23 @@ a:hover {
 }
 
 .promotion2 {
-    width: 25%;
+    background-color: rgb(0, 255, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.more-views {
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+}
+
+/*SECTION 1: Hot Daily*/
 
 .hot-daily {
     width: 30%;
-    max-width: 300px;
+    max-width: 350px;
     background-color: rgb(0, 255, 115);
     padding: 0 50px 20px 50px;
 }
@@ -223,12 +262,17 @@ a:hover {
     align-items: center;
 }
 
+.materiaHot {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    border: 1px solid black;
+}
+
 .img-hot {
     width: 250px;
     height: 100px;
     margin: 10px;
-    max-width: 100%;
-    max-height: 100%;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -267,6 +311,7 @@ img {
 
 .text-news h3 {
     padding-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .color-teste {
