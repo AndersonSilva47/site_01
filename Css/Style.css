@@ -16,7 +16,8 @@
 }
 
 html {
-    font-size: 62, 5%;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
     font-family: 'Montserrat', 'Open sans', 'Akronim', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -53,7 +54,7 @@ a {
 }
 
 li:hover {
-    background-color: rgb(0, 255, 115);
+    background-color: rgb(88, 242, 157);
     transition: all 10ms ease-in-out 0s;
 }
 
@@ -68,6 +69,14 @@ a:hover {
     margin: 0 auto;
     background: white;
     margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 /*HEAD--top*/
@@ -94,7 +103,7 @@ a:hover {
 /*HEAD--menu*/
 
 .lineDecoration {
-    background: rgb(0, 255, 115);
+    background: rgb(88, 242, 157);
     height: 0.5rem;
 }
 
@@ -135,7 +144,6 @@ a:hover {
     overflow: hidden;
     margin: 0 auto;
     justify-content: center;
-    border: 2px solid black;
 }
 
 .slot-slide {
@@ -177,6 +185,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    border: 4px groove rgba(123, 123, 123, 0.7);
 }
 
 .control {
@@ -188,13 +197,12 @@ a:hover {
     cursor: pointer;
     padding-left: 15px;
     color: white;
-    margin-bottom: 150px;
 }
 
 /*SECTION 1 - Mini-img*/
 
 .testeDIV {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     width: 100%;
     background-color: brown;
@@ -213,7 +221,6 @@ a:hover {
     background-size: cover;
     background-position: center;
 }
-
 
 .mini-text {
     display: flex;
@@ -261,14 +268,12 @@ a:hover {
     background-color: blue;
 }
 
-
-
 /*SECTION 1: Hot Daily*/
 
 .hot-daily {
     width: 30%;
     max-width: 350px;
-    background-color: rgb(0, 255, 115);
+    background-color: rgb(88, 242, 157);
     padding: 0 50px 20px 50px;
 }
 
@@ -284,7 +289,9 @@ a:hover {
     display: flex;
     flex-direction: column;
     font-size: 10px;
-    border: 1px solid black;
+    margin: 2px;
+    border: 3px outset gray;
+    background-color: rgb(247, 246, 246);
 }
 
 .img-hot {
@@ -338,9 +345,10 @@ img {
 }
 
 .color-teste {
+    border: 3px outset gray;
     display: flex;
     padding: 10px;
-    background-color: rgb(189, 118, 118);
+    background-color: rgb(233, 209, 209);
 }
 
 section {
@@ -390,10 +398,6 @@ h2 {
     padding: 20px;
 }
 
-h3 {
-    font-size: 20px;
-}
-
 .subtitle {
     padding: 2px;
     margin: 25px 0;
@@ -415,20 +419,16 @@ h3 {
         max-width: 100%;
         margin-top: 10px;
     }
-
     .materiaHot {
         flex-direction: row;
     }
-
     .descrition-hotnews {
         padding-top: 10px;
         font-size: 20px;
     }
-
     .img-hot {
         width: 100%;
     }
-
     .container-two-parts {
         display: flex;
         flex-direction: column;
@@ -451,7 +451,6 @@ h3 {
 }
 
 @media (max-width: 768px) {
-   
     .slider {
         height: inherit;
         max-width: 100%;
@@ -460,38 +459,32 @@ h3 {
         margin: 0 auto;
         border: 1px solid black;
     }
-
     .slot-slide {
         height: 300px;
     }
-
     .materiaHot {
         flex-direction: column;
     }
- 
     .img-hot {
         width: 400px;
         margin: 0 auto;
         height: 200px;
     }
-
     .control {
         width: 30px;
         height: 30px;
         font-size: 20px;
         padding-left: 8px;
         color: white;
-        margin-bottom: 150px;
     }
-
     .descrition-hotnews {
         padding-top: 10px;
         font-size: 14px;
     }
-
     .color-teste {
         height: 200px;
-        background-color: red;
+        background-color: rgb(233, 209, 209);
+        ;
         margin-bottom: 20px;
     }
     .img-news {
@@ -501,9 +494,6 @@ h3 {
         min-width: 150px;
         border: 1px solid black;
     }
-
- 
-
     img {
         width: 100%;
         height: 100%;
@@ -511,16 +501,16 @@ h3 {
     .text-news {
         margin-top: 10px;
         padding: 10px;
-        max-width: 50%;
+        max-width: 100%;
         font-size: 12px;
         min-width: 150px;
     }
     .text-news h3 {
         font-size: 15px;
-        padding-bottom: 0px;
+        padding-bottom: 0px;    
     }
     .subtitle {
-        margin: 0;
+        margin: 0 auto;
     }
     .color-teste2 {
         height: 200px;
@@ -528,28 +518,23 @@ h3 {
 }
 
 @media (max-width: 575.98px) {
-
     .slot-slide {
         height: 200px;
     }
-
     .textImg {
         font-size: 15px;
     }
-
     .color-teste {
         display: flex;
         flex-direction: column;
         height: auto;
         padding-bottom: 20px;
     }
-
     .img-hot {
         width: 260px;
         margin: 0 auto;
         height: 120px;
     }
-
     .img-news {
         margin: auto auto;
         border: 1px solid black;
@@ -571,11 +556,9 @@ h3 {
         margin: 0;
         padding-bottom: 10px;
     }
-
     .container-two-parts {
         padding: 5px;
     }
-
     .part1 {
         padding: 5px;
     }

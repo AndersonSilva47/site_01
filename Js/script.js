@@ -1,7 +1,7 @@
 
 let qtdSlide = document.querySelectorAll('.img-slide').length;
-let widthSlide = document.querySelector('.slider').clientWidth;
-let heightSlide = document.querySelector('.slider').clientHeight;
+let widthSlide = document.querySelector('.slot-slide').clientWidth;
+let heightSlide = document.querySelector('.slot-slide').clientHeight;
 let widthDaily = document.querySelector('.hot-daily').clientWidth;
 
 document.querySelector('.control-slide').style.width = `${widthSlide}px`; //CONFIGURAÇÃO PARA ESPAÇO FIXO;
