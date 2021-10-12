@@ -1,0 +1,185 @@
+@keyframes piscar {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.voting {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.Vote {
+    width: 800px;
+    height: 600px;
+    margin: 10px auto;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.visor {
+    max-height: 370px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textFavorite {
+    height: 42px;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.imgFavorite {
+    width: 500px;
+    height: 250px;
+    background-color: violet;
+    border: 10px groove rgb(255, 58, 58);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.imgFavorite span {
+    width: 100%;
+    min-width: 40px;
+    background-color: rgba(1, 1, 1, 0.5);
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Akronim';
+    color: white;
+}
+
+.numbers {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbSlot {
+    width: 30px;
+    height: 40px;
+    margin: 3px;
+    border: 5px inset rgb(106, 85, 85);
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.piscar {
+    animation-name: piscar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.textConfirm {
+    height: 16px;
+    min-width: 1px;
+    padding: 1px 50px;
+    margin: 5px;
+}
+
+.textConfirm span {
+    padding: 0 50px;
+    font-size: 10px;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    background-color: rgba(1, 1, 1, 0.3);
+}
+
+.tecladoEOption {
+    height: 100%;
+    background-color: tomato;
+    display: flex;
+}
+
+.teclado {
+    width: 400px;
+    max-height: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(0, 196, 137);
+    margin: 10px
+}
+
+.table-teclado {
+    margin: 5px auto;
+    padding: 0px 20px;
+}
+
+.table-teclado td {
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    border: 2px outset rgb(118, 118, 118);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    box-shadow: 1px 1px #555;
+    cursor: pointer;
+}
+
+.botoesConfirm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoesConfirm div {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: 2px outset rgb(118, 118, 118);
+    box-shadow: 1px 1px #555;
+    cursor: pointer;
+}
+
+#colspanWite {
+    border: none;
+    background-color: inherit;
+    box-shadow: none;
+    cursor: inherit;
+}
+
+.options {
+    width: 400px;
+    max-height: 100%;
+    background-color: blue;
+    margin: 10px
+}
+
+.finalVoto {
+    width: 780px;
+    height: 367px;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    text-align: center;
+    padding: 100px;
+}

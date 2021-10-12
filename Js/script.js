@@ -31,9 +31,7 @@ function updateMargin() {
     let sliderItemWidth = document.querySelector('.img-slide').clientWidth;
     let newMargin = (currentSlide * sliderItemWidth);
     document.querySelector('.slot-slide').style.marginLeft = `-${newMargin}px`;
-
 }
-
 
 
 setInterval(goNext, 4000);
