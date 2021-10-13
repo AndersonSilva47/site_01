@@ -48,9 +48,15 @@ li {
 a {
     padding: 1rem;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 12px;
+}
+
+p a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
 }
 
 li:hover {
@@ -90,7 +96,22 @@ section {
 }
 
 .x {
-    padding-bottom: 20px;
+    font-size: 50px;
+    padding: 10PX;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
+}
+
+.xx {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 /*HEAD--top*/
@@ -256,7 +277,7 @@ section {
 .hot-daily {
     width: 30%;
     max-width: 350px;
-    background-color: rgb(88, 242, 157);
+    background-color: rgb(168, 228, 195);
     padding: 0 50px 20px 50px;
 }
 
@@ -275,6 +296,7 @@ section {
     margin: 2px;
     border: 3px outset gray;
     background-color: rgb(247, 246, 246);
+    max-height: 220px;
 }
 
 .img-hot {
@@ -300,14 +322,14 @@ section {
 
 .img-news {
     margin: auto auto;
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 150px;
     min-width: 300px;
 }
 
 .descrition-hotnews {
     font-size: 12px;
-    padding: 10px 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 img {
@@ -316,22 +338,32 @@ img {
 }
 
 .text-news {
-    padding: 20px;
     max-width: 50%;
     font-size: 16px;
     min-width: 300px;
+    padding: 5px;
 }
 
 .text-news h3 {
-    padding-bottom: 10px;
     text-transform: uppercase;
 }
 
+.subtitle {
+    padding: 2px;
+    margin-top: 5px;
+}
+
 .color-teste {
-    border: 3px outset gray;
+    border: 4px outset rgb(124, 238, 68);
     display: flex;
     padding: 10px;
     background-color: rgb(233, 209, 209);
+}
+
+.color-teste {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 /*SEC 2*/
@@ -343,17 +375,27 @@ img {
     border-right: 1px inset gray;
 }
 
-.color-teste {
+.right-bar {
     width: 100%;
     height: 300px;
+    background-color: rgb(216, 216, 216);
     margin-bottom: 20px;
+    padding: 10px;
 }
 
-.color-teste2 {
-    width: 100%;
-    height: 400px;
-    background-color: blue;
-    margin-bottom: 20px;
+.right-bar-text {
+    margin: 10px 0;
+    background-color: rgb(255, 255, 255);
+    border: 1 groove rgb(157, 157, 157)
+}
+
+.right-bar-text h4 {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.hiperlinkP {
+    margin-top: 10px;
 }
 
 .part1 {
@@ -366,38 +408,88 @@ img {
     padding: 20px;
 }
 
-.subtitle {
-    padding: 2px;
-    margin: 25px 0;
-}
-
 /*SECTION 3- Promotion Banner*/
 
-.promotion-main {
+.sections-main {
+    width: 100%;
+    min-height: 600px;
     display: flex;
     border-left: 1px inset gray;
     border-right: 1px inset gray;
     justify-content: space-between;
 }
 
-.promotion {
+.sec-categorias {
+    width: 100%;
+    height: 100%;
+}
+
+.sec-categorias-main {
     display: block;
-    height: 100px;
+    height: 80px;
+    width: 100%;
     background-color: black;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
 }
 
-.promotion2 {
+.sec-categorias h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.sec-anime-others {
     background-color: rgb(0, 255, 115);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.more-views {
+.matersArv {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.matersArv-son {
     width: 80%;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.matersArv-img {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: flex;
+}
+
+.matersArv-img img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.matersArv-text {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.more-views {
+    width: 300px;
     height: 80%;
     background-color: blue;
 }
@@ -406,6 +498,10 @@ img {
     width: 100%;
     height: 300px;
     background-color: chartreuse;
+}
+
+.vot, .cad {
+    background-color: black;
 }
 
 /*MEDIA QUERIES*/
@@ -491,7 +587,6 @@ img {
     .color-teste {
         height: 200px;
         background-color: rgb(233, 209, 209);
-        ;
         margin-bottom: 20px;
     }
     .img-news {
@@ -540,7 +635,7 @@ img {
     .img-hot {
         width: 260px;
         margin: 0 auto;
-        height: 120px;
+        height: 150px;
     }
     .img-news {
         margin: auto auto;

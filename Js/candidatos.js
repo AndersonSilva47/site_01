@@ -27,6 +27,26 @@ let candidatos = [
                 numero: '05',
                 nome: 'Naruto... (sério?)',
                 foto: 'slider5'
+            },
+            {
+                numero: '11',
+                nome: 'Demon Slayer',
+                foto: 'anime1'
+            },
+            {
+                numero: '37',
+                nome: 'The Promissed Neverland',
+                foto: 'anime2'
+            },
+            {
+                numero: '47',
+                nome: 'Parasyte',
+                foto: 'anime3'
+            },
+            {
+                numero: '68',
+                nome: 'One Piece',
+                foto: 'anime4'
             }
         ]
     }

@@ -29,8 +29,8 @@ function clicou(n) {
             atualizaTela();
         }
     }
-    
-    if(votoFinalizado === true) console.log('teste');
+
+    if (votoFinalizado === true) console.log('teste');
 
 }
 
@@ -96,23 +96,24 @@ function corrige() {
 }
 
 function confirmar() {
-    let candit = candidatos[etapaAtual];
-    let votoConfirmado = false;
+    if (!votoFinalizado) {
+        let candit = candidatos[etapaAtual];
+        let votoConfirmado = false;
 
-    if (numberCandidato.length === candit.digitos) {
-        votoConfirmado = true;
-    }
+        if (numberCandidato.length === candit.digitos) {
+            votoConfirmado = true;
+        }
 
-    if (votoConfirmado) {
-        etapaAtual++;
-        if (candidatos[etapaAtual] !== undefined) {
-            votacao()
-        } else {
-            document.querySelector('.visor').innerHTML = '<div class="finalVoto piscar">FIM</div>';
-            votoFinalizado = true;
+        if (votoConfirmado) {
+            etapaAtual++;
+            if (candidatos[etapaAtual] !== undefined) {
+                votacao()
+            } else {
+                document.querySelector('.visor').innerHTML = '<div class="finalVoto piscar">FIM</div>';
+                votoFinalizado = true;
+            }
         }
     }
-
     if (votoFinalizado) console.log('Voto Finalizado');
 
 }

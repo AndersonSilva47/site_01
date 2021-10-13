@@ -14,6 +14,7 @@
     display: flex;
     justify-self: center;
     align-items: center;
+    background-color: rgb(119, 119, 128);
 }
 
 .Vote {
@@ -53,17 +54,19 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    transition: all 300ms ease;
 }
 
 .imgFavorite span {
     width: 100%;
     min-width: 40px;
-    background-color: rgba(1, 1, 1, 0.5);
+    background-color: rgba(1, 1, 1, 0.6);
     text-align: center;
     padding: 10px;
     font-size: 40px;
     font-family: 'Akronim';
     color: white;
+    transition: all 5000ms ease-in-out 1s;
 }
 
 .numbers {
@@ -168,10 +171,41 @@
 }
 
 .options {
+    border: 5px solid rgb(0, 0, 0);
     width: 400px;
+    max-height: 192px;
+    background-color:  rgb(0, 196, 137);
+    margin: 10px;
+    overflow-y: scroll;
+}
+
+.borderCuston {
+    border: 4px outset rgb(192, 192, 192);
+    margin: 10px auto;
+    width: 300px;
+
+}
+.optTextDescrition {
+    font-size: 15px;
+    text-align: center;
+}
+
+.table-op{
+    max-width: 100%;
     max-height: 100%;
-    background-color: blue;
-    margin: 10px
+    margin: 10px; 
+    border-collapse: collapse;
+
+}
+
+.table-op td {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.numberForVote {
+    font-weight: bold;
 }
 
 .finalVoto {
