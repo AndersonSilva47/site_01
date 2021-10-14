@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Css/Style.css">
-    <link rel="stylesheet" href="/Css/Vote.css">
+    <link rel="stylesheet" href="/Css/Cad.css">
 </head>
 
 <body>
@@ -36,7 +36,48 @@
             </nav>
         </aside>
     </header>
+    <section class="container">
+        <div class="spacewhite"></div>
 
+        <div class="formulario">
+            <h2>Formulario de Cadastro</h2>
+            <div class="descritions">
+                <ul>
+                    <li>Preencha todos os campos</li>
+                    <li>Nome de usuário só pode conter letras e números</li>
+                    <li>Nome de usuário deve conter entre 4 a 12 caracteres</li>
+                    <li>Senha precisa ter entre 6 a 10 caracteres</li>
+                </ul>
+            </div>
+            <form action="/" method="POST" class="form">
+                <label class="textFont">Nome</label>
+                <input type="text" name="nome" id="nome" class="campoInput nome">
+                <label>CPF</label>
+                <input type="text" name="cpf" id="cpf" class="campoInput cpf">
+                <label>Usuário</label>
+                <input type="text" name="usuario" id="usuario" class="campoInput usuario">
+                <label>Gênero</label>
+                <select id="genero" name="genero" class="gene">
+                    <option value="mas">Masculino</option>
+                    <option value="fem">Feminino</option>
+                    <option value="neutro">Neutro</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                <label>E-mail</label>
+                <input type="email" name="email" id="email" class="campoInput email">
+                <label>Senha</label>
+                <input type="password" name="senha" id="senha" class="campoInput senha">
+                <label>Repetir senha</label>
+                <input type="password" name="senha2" id="senha2" class="campoInput senha2">
+
+                <button type="submit" class="submit">Enviar</button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="/Js/formulario.js"></script>
 
 </body>
 

@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
 }
 
 html {
@@ -38,7 +39,7 @@ img {
     background-size: cover !important;
 }
 
-li {
+.menu-op li, .menu-av li {
     list-style-type: none;
     padding: 1rem;
     text-transform: uppercase;
@@ -59,7 +60,7 @@ p a {
     cursor: pointer;
 }
 
-li:hover {
+.menu-op li:hover, .menu-av li:hover {
     background-color: rgb(88, 242, 157);
     transition: all 10ms ease-in-out 0s;
 }
